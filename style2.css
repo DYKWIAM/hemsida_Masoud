@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .header, .menu{
+    align-items: center;
+  }
+
+  header, footer, main, .right-sidebar {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+.header{
+    order: 1; 
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    height: 16vh;
+    
+  }
+.menu{
+  display: flex;
+}
+.menu div{
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+
+.main{
+    flex: 3; 
+    order: 2;
+    background-image: linear-gradient(to left, rgba(99, 86, 109, 0.52), rgba(13, 7, 12, 0.73)),
+    url('pic/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh; 
+    color: rgb(255, 213, 213);
+    font-weight: bold;
+    font-size: 40px;
+
+  }
+
+  .right-sidebar {
+    display: flex;
+    flex: 1; 
+    order: 3;
+    background-color: #f4f4f4;
+  }
+
+  .event{
+    border: 4px solid black;
+    padding: 10px;
+    margin: 10px;
+   
+    height: auto;
+    flex: 1;
+    
+    position: relative;
+    overflow: hidden;
+  }
+.event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    order: 4;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+    }
+
+    .right-sidebar {
+      order: 4;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  th, td {
+    border: 0px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+/*--------link style---------------*/
+a {
+  color: #007bff; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+  font-size: large;
+}
+
+a:hover {
+  color: #0056b3;
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: #ff4500;
+}
+/*--------Form-------------*/
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  display: block;
+}
+
+label {
+  margin-bottom: 1px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/*--------Form-------------*/
